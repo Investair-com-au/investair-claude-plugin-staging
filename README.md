@@ -2,7 +2,7 @@
 
 **This is not the production Investair plugin.** Do not give this repo to customers or brokers.
 
-Staff-only Claude marketplace for the **staging** MCP. No API keys in this repo.
+Staff-only Claude marketplace for the **staging** MCP. Same **public** research skills as production (`investair` v0.18.11: snapshot, initiation, sector, peers, digests, feedback). Connector is **`Investair_data_staging`**. No API keys. This is not the private v0.19 plugin.
 
 | | Production (customers) | This repo (staff testers) |
 |--|--|--|

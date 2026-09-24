@@ -4,15 +4,15 @@
     "name": "Investair"
   },
   "metadata": {
-    "description": "Staff tester marketplace for Investair MCP staging. Not the production plugin.",
-    "version": "0.1.2"
+    "description": "Staff tester marketplace for Investair MCP staging. Same public skills as production, staging connector only. Not for customers.",
+    "version": "0.18.11"
   },
   "plugins": [
     {
       "name": "investair-staging",
       "source": "./plugins/investair-staging",
-      "description": "Staff tester connector for Investair_data_staging. URL only — sign in with Clerk. Not for customers.",
-      "version": "0.1.2",
+      "description": "Staff tester: public research skills over Investair_data_staging. Not the production investair plugin. Not for customers.",
+      "version": "0.18.11",
       "author": {
         "name": "Investair"
       }

@@ -1,9 +1,15 @@
 {
   "name": "investair-staging",
-  "version": "0.1.2",
-  "description": "Staff tester connector for Investair MCP staging. URL only — no API keys. Sign-in is Clerk org investair-staging-testers. Not the production investair plugin.",
+  "version": "0.18.11",
+  "description": "Staff tester: public Investair research skills over Investair_data_staging (not production). Snapshots, initiation, sector reports, peers, digests, /log-feedback. URL only — Clerk org investair-staging-testers.",
   "author": {
     "name": "Investair"
   },
-  "keywords": ["investair", "asx", "staging", "mcp", "staff-only"]
+  "keywords": [
+    "investair",
+    "asx",
+    "staging",
+    "mcp",
+    "staff-only"
+  ]
 }
