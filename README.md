@@ -4,6 +4,8 @@
 
 Staff-only Claude marketplace for the **staging** MCP. Same **public** research skills as production (`investair` v0.18.11: snapshot, initiation, sector, peers, digests, feedback). Connector is **`Investair_data_staging`**. No API keys. This is not the private v0.19 plugin.
 
+Local project folder: `lambda-functions/investair-claude-plugin-staging/` — sibling of `investair-claude-marketplace/`. Edit here and push `main`. Do not edit a copy inside the MCP repo.
+
 | | Production (customers) | This repo (staff testers) |
 |--|--|--|
 | Marketplace | `Investair-com-au/investair-claude-marketplace` | `Investair-com-au/investair-claude-plugin-staging` |
