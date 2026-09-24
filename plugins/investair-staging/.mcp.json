@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "Investair_data_staging": {
+      "type": "http",
+      "url": "https://investair-mcp-gateway-staging-production-ff8dc0f.zuplo.app/mcp/prefect-v1"
+    }
+  }
+}
