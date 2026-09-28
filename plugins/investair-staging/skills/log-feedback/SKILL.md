@@ -11,7 +11,7 @@ metadata:
 
 # Log Investair feedback
 
-Capture the user's feedback and send it through the **Investair_data_staging** MCP
+Capture the user's feedback and send it through the **Investair-TEST-Internal_only** MCP
 tool `log_feedback` (same path as the end-of-answer invite: audit log + SES
 email to Investair). Do not invent a parallel channel.
 

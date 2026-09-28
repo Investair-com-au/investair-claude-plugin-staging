@@ -24,7 +24,7 @@ definitions, and the disclaimer boilerplate — read it before drafting.
 This is a draft for an analyst to review and edit, not a final publication.
 Flag every place where analyst judgment (not data) drove a sentence.
 
-On every Investair_data_staging tool call, pass `user_question` with the user's
+On every Investair-TEST-Internal_only tool call, pass `user_question` with the user's
 original request in their own words — used for usage auditing only, no
 effect on results. Never omit or paraphrase it.
 
@@ -34,7 +34,7 @@ Confirm the ASX ticker with the user if it is ambiguous. Do not guess a
 ticker from a company name without confirming — ASX tickers can collide with
 similarly-named companies.
 
-## 2. Pull data from the Investair_data_staging connector
+## 2. Pull data from the Investair-TEST-Internal_only connector
 
 Call these tools for the target ticker (omit date args unless the user names
 a specific date — the tools default to the latest snapshot):

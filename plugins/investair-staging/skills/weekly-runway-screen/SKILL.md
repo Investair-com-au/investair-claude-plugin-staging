@@ -12,7 +12,7 @@ metadata:
 # Weekly Cash Runway / Funding Risk Screen ("Raise Radar")
 
 Produce a week-over-week digest of ASX-listed companies likely to need a
-capital raise soon, using the Investair_data_staging MCP connector.
+capital raise soon, using the Investair-TEST-Internal_only MCP connector.
 
 **This skill is presentation-only.** The screen itself is defined by the
 MCP tool `screen_funding_risk` — do not embed SQL, do not reconstruct the

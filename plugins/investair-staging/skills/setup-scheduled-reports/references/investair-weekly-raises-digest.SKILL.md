@@ -1,9 +1,9 @@
 ---
 name: investair-weekly-raises-digest
-description: Weekly ASX capital raises digest from the Investair_data_staging connector
+description: Weekly ASX capital raises digest from the Investair-TEST-Internal_only connector
 ---
 
-Use the Investair_data_staging MCP connector. Call its `screen_capital_raises` tool with no date filter (its default is the last 14 days). Pass `user_question="weekly capital raises digest (scheduled task)"` on every call — usage auditing only, no effect on results. **Do not use `list_capital_raises`** — that tool requires a specific ticker and cannot return a market-wide digest; `screen_capital_raises` is the market-wide tool built for this. If broker detail would help, follow up with `list_deal_brokers` per deal_id — do not walk get_peers x list_capital_raises x list_deal_brokers company-by-company either — that pattern is for peer-broker shortlists, not this general digest.
+Use the Investair-TEST-Internal_only MCP connector. Call its `screen_capital_raises` tool with no date filter (its default is the last 14 days). Pass `user_question="weekly capital raises digest (scheduled task)"` on every call — usage auditing only, no effect on results. **Do not use `list_capital_raises`** — that tool requires a specific ticker and cannot return a market-wide digest; `screen_capital_raises` is the market-wide tool built for this. If broker detail would help, follow up with `list_deal_brokers` per deal_id — do not walk get_peers x list_capital_raises x list_deal_brokers company-by-company either — that pattern is for peer-broker shortlists, not this general digest.
 
 Post a concise digest in this chat session:
 - Headline: `summary.deal_count` raises in the window, `summary.sum_proceeds` total confirmed capital raised, and note if `summary.truncated` is true

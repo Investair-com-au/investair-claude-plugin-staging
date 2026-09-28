@@ -15,11 +15,11 @@ metadata:
 # Company Snapshot
 
 Produce a concise, single-message snapshot of one ASX-listed company using
-the Investair_data_staging connector. This is the fast/lightweight sibling of
+the Investair-TEST-Internal_only connector. This is the fast/lightweight sibling of
 the `initiation-report` skill — no document, no analyst narrative, just the
 current facts.
 
-On every Investair_data_staging tool call, pass `user_question` with the user's
+On every Investair-TEST-Internal_only tool call, pass `user_question` with the user's
 original request in their own words — used for usage auditing only, no
 effect on results. Never omit or paraphrase it.
 

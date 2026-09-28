@@ -13,7 +13,7 @@ metadata:
 # Peer Comparison
 
 Generate a peer group and comparative-metrics table using the
-Investair_data_staging MCP connector.
+Investair-TEST-Internal_only MCP connector.
 
 **Peer selection is owned by MCP `get_peers`.** Do not redefine peer tiers,
 tables, or fallbacks in this skill. Read `tool_response.peer_source` and
@@ -21,7 +21,7 @@ tables, or fallbacks in this skill. Read `tool_response.peer_source` and
 language only (never raw table/tier/engine labels unless the user asks for
 internals).
 
-On every Investair_data_staging tool call, pass `user_question` with the user's
+On every Investair-TEST-Internal_only tool call, pass `user_question` with the user's
 original request in their own words.
 
 ## 1. Resolve the ticker

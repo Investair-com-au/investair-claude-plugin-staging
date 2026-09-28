@@ -15,9 +15,9 @@ metadata:
 Build a shortlist of institutional investors likely to be interested in a
 target company, by cross-referencing substantial-holder (SSH) data across
 its peer group with its own current holder base — using the
-Investair_data_staging connector.
+Investair-TEST-Internal_only connector.
 
-On every Investair_data_staging tool call, pass `user_question` with the user's
+On every Investair-TEST-Internal_only tool call, pass `user_question` with the user's
 original request in their own words — used for usage auditing only, no
 effect on results. Never omit or paraphrase it.
 

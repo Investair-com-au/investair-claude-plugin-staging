@@ -12,7 +12,7 @@ metadata:
 # Weekly Capital Raises Digest
 
 Produce a concise weekly digest of recent ASX capital raises, using the
-Investair_data_staging connector. This is the report the plugin's weekly
+Investair-TEST-Internal_only connector. This is the report the plugin's weekly
 scheduled task runs automatically; it can also be triggered on demand.
 
 On every tool call, pass `user_question` — for the scheduled run, use a

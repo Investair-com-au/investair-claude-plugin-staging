@@ -2,7 +2,7 @@
 
 **This is not the production Investair plugin.** Do not give this repo to customers or brokers.
 
-Staff-only Claude marketplace for the **staging** MCP. Same **public** research skills as production (`investair` v0.18.11: snapshot, initiation, sector, peers, digests, feedback). Connector is **`Investair_data_staging`**. No API keys. This is not the private v0.19 plugin.
+Staff-only Claude marketplace for the **staging** MCP. Same **public** research skills as production (`investair` v0.18.11: snapshot, initiation, sector, peers, digests, feedback). Connector is **`Investair-TEST-Internal_only`** (same Zuplo URL; Claude Team already allows this name). No API keys. This is not the private v0.19 plugin.
 
 Local project folder: `lambda-functions/investair-claude-plugin-staging/` — sibling of `investair-claude-marketplace/`. Edit here and push `main`. Do not edit a copy inside the MCP repo.
 
@@ -10,7 +10,7 @@ Local project folder: `lambda-functions/investair-claude-plugin-staging/` — si
 |--|--|--|
 | Marketplace | `Investair-com-au/investair-claude-marketplace` | `Investair-com-au/investair-claude-plugin-staging` |
 | Plugin | `investair` | `investair-staging` |
-| Connector | `Investair_data` | `Investair_data_staging` |
+| Connector | `Investair_data` | `Investair-TEST-Internal_only` |
 | MCP URL | `https://mcp.investair.com.au/mcp/prefect-v1` | tester gateway below |
 
 This org also hosts the public product marketplace. Add **that** repo for live `Investair_data`. Add **this** repo only if you are testing staging.
@@ -22,14 +22,14 @@ This org also hosts the public product marketplace. Add **that** repo for live `
    - `https://github.com/Investair-com-au/investair-claude-plugin-staging.git`
 2. Install plugin **investair-staging** (not `investair`).
 3. Sign in with your **@investair.com.au** email when prompted.
-4. Use connector **`Investair_data_staging`**, not production `Investair_data`.
+4. Use connector **`Investair-TEST-Internal_only`**, not production `Investair_data`.
 
 If login says staff-only, ask Terry to add you to Clerk org **Investair staging testers**.
 
 ## Custom connector (if Add marketplace fails)
 
 1. Keep production `Investair_data` as-is.
-2. Add custom MCP connector `Investair_data_staging`.
+2. Use the existing custom MCP connector `Investair-TEST-Internal_only` (no org rename).
 3. URL (no Bearer key):
 
    `https://investair-mcp-gateway-staging-production-ff8dc0f.zuplo.app/mcp/prefect-v1`

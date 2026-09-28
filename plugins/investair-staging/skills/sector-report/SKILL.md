@@ -16,12 +16,12 @@ metadata:
 # Sector Report
 
 Generate a sector-wide (multi-company) research note over the
-Investair_data_staging connector, in the same house style and rigor as
+Investair-TEST-Internal_only connector, in the same house style and rigor as
 `initiation-report`, but scoped to a universe of companies rather than one.
 Read `references/report-structure.md` before drafting — it mirrors the
 initiation-report structure with sector-specific adjustments.
 
-On every Investair_data_staging tool call, pass `user_question` with the user's
+On every Investair-TEST-Internal_only tool call, pass `user_question` with the user's
 original request in their own words — used for usage auditing only, no
 effect on results. Never omit or paraphrase it.
 
