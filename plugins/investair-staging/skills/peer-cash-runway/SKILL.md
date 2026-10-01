@@ -46,6 +46,11 @@ months from today; use a different window only if the user names one.
   company. A company with `found: false` has no current cashflow row —
   note it as excluded from the timeline rather than guessing its runway.
 
+- `get_previous_quarter_burning_rate` — SAME ticker list, default last 4
+  filed quarters. Use as trend context (is burn rising/falling). Snapshot
+  Burn/Qtr stays the current-quarter estimate. Do not dump all series in
+  the timeline table.
+
 ## 3. Compute a cash-out estimate per company
 
 For each company with cash data: estimated cash-out month ≈

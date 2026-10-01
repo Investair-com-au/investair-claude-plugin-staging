@@ -68,6 +68,10 @@ For the resolved universe (target + every other company in scope):
   into consecutive batches of up to 30 and merge the results. Each result
   is keyed by ticker with `found`/`snapshot`; treat a `found: false` entry
   as missing data for that company rather than an error.
+- `get_previous_quarter_burning_rate` — same ticker batches (last 4 filed
+  quarters, max 8). Snapshot Burn/Qtr is the current estimate; this series
+  is filed trend context. Do not print every quarter for every name in the
+  main table — target + a one-line peer trend is enough unless asked.
 - `get_company_projects` — for a sector-level project/asset map (single-
   ticker; still called per company)
 

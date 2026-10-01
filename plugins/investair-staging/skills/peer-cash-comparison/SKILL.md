@@ -33,6 +33,13 @@ Confirm the target ticker if ambiguous.
 - `get_peers` (ticker) — use returned peers and `peer_source`
 - Batch target + peers into ONE call each of `get_market_snapshots` and
   `get_cashflow_snapshots` (max 30 tickers per call; split if needed)
+- Then `get_previous_quarter_burning_rate` with the **same** ticker list
+  (default last 4 filed quarters, max 8). Snapshot Burn/Qtr is the
+  **current-quarter estimate**. This series is burn **as filed** — trend
+  context. Do not present the newest filed quarter as a second current
+  burn. Do not call `list_cashflow_quarterly` unless the user asks for
+  deeper history — then the same ticker list is fine (default 12 / max 20
+  rows per name).
 - Compute EV = Market Cap − Cash per row from the raw snapshots
 
 If the user wants best peer brokers for a raise, use `screen_peer_brokers`
@@ -49,6 +56,11 @@ Before the table: 1–2 sentences on why this peer set was selected, drawn
 from the fields `get_peers` actually returned for this `peer_source`. List
 peer tickers. Then table: Ticker, Company, Country/Focus, Stage, Market
 Cap, Cash, EV, Burn/Qtr, Runway — target first, peers by EV ascending.
+
+After the table, one short **filed burn** context for the **target** (last
+4 quarters from `get_previous_quarter_burning_rate`, `total_relevant_outgoings`
+as filed, with quarter-end dates). Optionally a one-line trend for 1–3
+closest peers. Respect `currency`/`unit`. This is not the snapshot Burn/Qtr.
 
 If the set looks wrong or incomplete, say peer matching is still being
 improved and invite feedback (`log_feedback`).

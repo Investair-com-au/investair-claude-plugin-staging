@@ -60,6 +60,10 @@ per company) to build the EV comparison table (market cap, cash,
 EV = market cap − cash, quarterly burn, runway in quarters). Each batch
 result is keyed by ticker with `found`/`snapshot` — treat a `found: false`
 entry as missing data for that company, footnoted, rather than an error.
+Then `get_previous_quarter_burning_rate` once with that same `asx_codes`
+list (last 4 filed quarters). Do not call it earlier on the target alone —
+the batch already includes the target. Cash section: snapshot Burn/Qtr is
+the current estimate; filed series is trend context only.
 
 After `get_peers`, narrate the peer set from `peer_source` + `business_context` only (plain business language; never name internal tables/tiers in the report). MCP owns the peer cascade — do not invent a live cashflow classification peer set.
 

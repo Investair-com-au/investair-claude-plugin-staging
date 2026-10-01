@@ -35,6 +35,10 @@ defaults):
 
 - `get_market_snapshot` — price, market cap, price performance
 - `get_cashflow_snapshot` — cash, burn, runway
+- `get_previous_quarter_burning_rate` — `asx_codes=[target]` (a list, not
+  a bare string), last 4 filed quarters (`total_relevant_outgoings`).
+  Current Burn/Qtr stays the snapshot estimate; this is filed trend
+  context, one short line.
 - `get_company_projects` — project list
 - `get_substantial_holders` — top holders (state the threshold/as-at date
   the tool returns)
@@ -54,6 +58,8 @@ Reply directly in chat (not a document) with:
 
 - One-line header: ticker, company name, sector/commodity, stage
 - A compact stat line: price, market cap, EV (mcap − cash), cash, runway
+- Last 4 **filed** quarterly burns (from `get_previous_quarter_burning_rate`),
+  one short line — not a substitute for snapshot Burn/Qtr
 - Project list (name, country, stage, ownership) — 1 line each
 - Top 3-5 substantial holders with stake % — flag any with
   `prime_broker_clause_detected: true` prominently, not as a footnote
