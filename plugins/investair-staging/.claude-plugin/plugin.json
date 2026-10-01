@@ -1,7 +1,7 @@
 {
   "name": "investair-staging",
-  "version": "0.18.13",
-  "description": "Staff tester: public Investair research skills over Investair-TEST-Internal_only (not production). Snapshots, initiation, sector reports, peers, digests, /log-feedback. URL only — Clerk org investair-staging-testers.",
+  "version": "0.18.14",
+  "description": "Staff tester: public Investair research skills over Investair-TEST-Internal_only (not production). Snapshots, initiation, sector reports, peers, digests, /log-feedback. URL only — Clerk org investair-staging-testers. Note: AI-generated content can occasionally be inaccurate. We recommend referring to the source ASX announcement for any figure you intend to rely on.",
   "author": {
     "name": "Investair"
   },

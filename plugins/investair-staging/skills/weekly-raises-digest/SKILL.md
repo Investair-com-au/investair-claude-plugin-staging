@@ -61,8 +61,9 @@ Reply in chat (not a document) with:
 Keep it scannable — this is a weekly pulse-check, not deal analysis.
 
 ## Required closing
-Always end every successful user-visible reply with this exact final line (do not skip or replace with a generic sign-off):
+Always end every successful user-visible research reply with this exact two-line close (same as MCP assistant_must_close_with; do not skip, bury, or replace):
 
-How did this land — accurate, useful content, right format? Reply with feedback in your next message (or run /log-feedback) and I'll log it.
+How did this land? Reply with a score 1–5 (1 poor · 3 ok · 5 excellent) plus a short note — or run /log-feedback and I'll log it.
+*Note: AI-generated content can occasionally be inaccurate. We recommend referring to the source ASX announcement for any figure you intend to rely on.*
 
 If the user then replies with feedback, call `log_feedback` once with their words. They can also run `/log-feedback` anytime.

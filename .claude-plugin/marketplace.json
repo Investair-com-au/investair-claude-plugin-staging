@@ -4,15 +4,15 @@
     "name": "Investair"
   },
   "metadata": {
-    "description": "Staff tester marketplace for Investair MCP staging. Same public skills as production, staging connector only. Not for customers.",
-    "version": "0.18.13"
+    "description": "Staff tester marketplace for Investair MCP staging. Same public skills as production, staging connector only. Not for customers. Note: AI-generated content can occasionally be inaccurate. We recommend referring to the source ASX announcement for any figure you intend to rely on.",
+    "version": "0.18.14"
   },
   "plugins": [
     {
       "name": "investair-staging",
       "source": "./plugins/investair-staging",
-      "description": "Staff tester: public research skills over Investair-TEST-Internal_only. Not the production investair plugin. Not for customers.",
-      "version": "0.18.13",
+      "description": "Staff tester: public research skills over Investair-TEST-Internal_only. Not the production investair plugin. Not for customers. Note: AI-generated content can occasionally be inaccurate. We recommend referring to the source ASX announcement for any figure you intend to rely on.",
+      "version": "0.18.14",
       "author": {
         "name": "Investair"
       }
