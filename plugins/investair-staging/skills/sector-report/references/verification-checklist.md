@@ -48,7 +48,25 @@ If any company's cash or market data wasn't available for the as-at date
 used elsewhere in the report, say so explicitly next to that company's row
 rather than silently omitting the company or leaving a blank.
 
-## 6. Structure and disclaimer completeness
+## 6. Sources section is complete and honest
+
+- Every Investair source pulled for the report has a row in **Sources &
+  Data References**, and no row lists a source that was not actually pulled
+- Each as-at date matches the tool response; companies with a different
+  as-at date from the rest of the universe are named
+- Every figure or fact taken from an ASX filing carries a superscript
+  number, and each number resolves to the right entry (ticker, date,
+  title) in the numbered announcements list
+- Every entry in that list is cited at least once; numbers run 1..N in
+  order of first appearance with no gaps or duplicates
+- Every other hard figure carries the number of the dataset row that
+  supplied it (column-header markers count); calculated metrics carry their
+  inputs' numbers
+- Every link is either the ASX announcements page for the right ticker or
+  one returned by a tool — no constructed document links
+- No invented links, and no internal table, column or tool names
+
+## 7. Structure and disclaimer completeness
 
 - Every section in `references/report-structure.md` is present, or its
   absence is explicitly explained

@@ -93,7 +93,17 @@ the announcements/data pulled). Mark clearly, either inline in `[brackets]`
 or in a final "Analyst review needed" list, anywhere you are inferring
 rather than reporting a hard number.
 
-## 5. Always include the disclaimer
+## 5. Always include the sources and the disclaimer
+
+Add the **Sources & Data References** section defined in
+`references/report-structure.md` (section 11): every Investair source used,
+its as-at date taken from the tool response, the announcements relied on by
+date and title, the calculated metrics, and anything that did not come from
+Investair. Mark every figure with a superscript number: facts taken
+from an ASX filing (a drill result, study date, raise, or holder stake)
+point to that filing in the numbered announcements list, linked to the
+ticker's ASX announcements page; all other figures point to their numbered
+row in the source table.
 
 Append the standard disclaimer from `references/report-structure.md`
 verbatim, updating only the data-as-at date and the specific data-source
