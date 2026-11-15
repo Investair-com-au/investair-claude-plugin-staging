@@ -13,6 +13,9 @@ Post a concise digest in this chat session:
 
 Keep it scannable — this is a weekly pulse-check, not deal analysis.
 
+## Sources
+After the digest and immediately before the required closing, add a short **Sources — Investair** block: "Capital raises data (from ASX Appendix 3B/2A filings), raises from [from date] to [to date]", plus one line per broker lookup or announcement you relied on (announcement date and title). Take dates from the tool response, never from memory. Plain business names only — no internal table, column or tool names. Never invent a link. Where the response carries a filing (date and title) for a deal, put a Unicode superscript number (¹ ² ³) after that deal's proceeds and list the filings, numbered in order of first appearance, under "Announcements" at the top of the Sources block; when no filing detail is returned for a deal, point it at a numbered "Capital raises data" entry instead, which the headline totals also cite. End each filing entry with a link to that ticker's ASX announcements page, `[ASX announcements: TICKER](https://www.asx.com.au/markets/company/TICKER)` — the only link you may construct; never invent a document link. Never use `<sup>` or other markup in chat. Never print feed IDs or other internal identifiers — identify a filing by ticker, date and title.
+
 ## Required closing
 Always end every successful user-visible research reply with this exact two-line close (same as MCP assistant_must_close_with; do not skip, bury, or replace):
 

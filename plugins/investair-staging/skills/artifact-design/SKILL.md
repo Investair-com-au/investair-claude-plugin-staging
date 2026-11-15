@@ -41,6 +41,18 @@ under a minute, suitable for equity research — not a marketing landing page.
 ## Investair-specific
 
 - Always note figures come from Investair data where relevant.
+- Carry the parent skill's **Sources** lines (each Investair source with its
+  as-at date, each announcement with its date and title) in a small footer
+  on the artifact, so it stays traceable when shared without the chat.
+- Where the parent skill numbers its citations, mark each figure on the
+  artifact with a `<sup>` number matching the chat reply, and list the
+  numbered sources in that footer, keeping each filing's link to the ASX
+  announcements page as a real `<a href>`.
 - Projections / raise windows are estimates — say so in the subtitle.
 - When the parent skill specifies markers/legend, follow that skill exactly;
   this skill only covers general artifact polish.
+
+## Identifiers
+
+- Never print feed IDs, document IDs or other internal identifiers on an
+  artifact. Identify a reference by ticker, date and title.

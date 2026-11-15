@@ -118,7 +118,17 @@ the checklist catches before moving to handoff; report any issue you
 couldn't resolve (e.g. a company's figures you can't trace back to a tool
 call) directly to the user instead of silently dropping or guessing it.
 
-## 5. Disclaimer
+## 5. Sources and disclaimer
+
+Add the **Sources & Data References** section defined in
+`references/report-structure.md` (section 8): every Investair source used,
+its as-at date taken from the tool response, how the universe was resolved,
+the announcements relied on by date and title, the calculated metrics, and
+anything that did not come from Investair. Mark every figure with a superscript
+number: facts taken from an ASX filing (in the capital-markets section and
+the company call-outs) point to that filing in the numbered announcements
+list, linked to the ticker's ASX announcements page; all other figures
+point to their numbered row in the source table.
 
 Append the same disclaimer as `initiation-report` (see its
 `references/report-structure.md` for the verbatim text), adjusted to

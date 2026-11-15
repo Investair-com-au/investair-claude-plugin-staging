@@ -69,7 +69,25 @@ reflects inference or judgment rather than a reported fact should be marked
 this actually happened throughout the draft — it's easy to do it for the
 first section and drift from it by the thesis.
 
-## 7. Structure and disclaimer completeness
+## 7. Sources section is complete and honest
+
+- Every Investair source pulled for the report has a row in **Sources &
+  Data References**, and no row lists a source that was not actually pulled
+- Each as-at date matches the date in the tool response — not today's date
+- Every figure or fact taken from an ASX filing carries a superscript
+  number, and each number resolves to the right entry (ticker, date,
+  title) in the numbered announcements list
+- Every entry in that list is cited at least once; numbers run 1..N in
+  order of first appearance with no gaps or duplicates
+- Every other hard figure carries the number of the dataset row that
+  supplied it (column-header markers count); calculated metrics carry their
+  inputs' numbers
+- Every link is either the ASX announcements page for the right ticker or
+  one returned by a tool — no constructed document links
+- No invented links, and no internal table, column or tool names
+- User-supplied or inferred figures sit under "Not from Investair"
+
+## 8. Structure and disclaimer completeness
 
 - Every section in `references/report-structure.md` is present, or its
   absence is explicitly explained (e.g. "no metallurgy subsection — no
