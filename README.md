@@ -2,7 +2,7 @@
 
 **This is not the production Investair plugin.** Do not give this repo to customers or brokers.
 
-Staff-only Claude marketplace for the **staging** MCP. Same **public** research skills as production (`investair` v0.18.11: snapshot, initiation, sector, peers, digests, feedback). Connector is **`Investair-TEST-Internal_only`** (same Zuplo URL; Claude Team already allows this name). No API keys. This is not the private v0.19 plugin.
+Staff-only Claude marketplace for the **staging** MCP. Same **public** research skills as production, plus two staging-only screens (`software-company-screen`, `multi-company-people`) that call the staging MCP. Connector is **`Investair-TEST-Internal_only`** (same Zuplo URL; Claude Team already allows this name). No API keys. This is not the private plugin.
 
 Local project folder: `lambda-functions/investair-claude-plugin-staging/` — sibling of `investair-claude-marketplace/`. Edit here and push `main`. Do not edit a copy inside the MCP repo.
 
